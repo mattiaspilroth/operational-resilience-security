@@ -166,8 +166,7 @@ The constraints described above have not only shaped operations. They have also 
 
 ### 7.1 When descriptions become prescriptions
 
-The Purdue Enterprise Reference Architecture documented how industrial systems were structured: field devices, control layers, site operations, 
-enterprise. It described existing reality. It did not prescribe security boundaries.
+The Purdue Enterprise Reference Architecture documented how industrial systems were structured: field devices, control layers, site operations, enterprise. It described existing reality. It did not prescribe security boundaries.
 
 When OT security emerged as a discipline, Purdue was adopted as a 
 segmentation template. Over time, description hardened into prescription. 

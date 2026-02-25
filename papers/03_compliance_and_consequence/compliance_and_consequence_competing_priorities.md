@@ -171,4 +171,4 @@ Making those mismatches visible without dramatization is often the actual work.
 
 Resilience is engineered, not purchased or documented. Engineering requires understanding how threats, systems, and consequences interact within a specific environment.
 
-Organizations that fail to distinguish between activity and resilience may satisfy auditors while building programs that erode under stress. The distinction is rarely visible in dashboards. It becomes visible when assumptions are tested under pressure.
+For organizations under regulatory pressure, the challenge is not choosing between compliance and resilience. It is preventing compliance from redefining resilience.
