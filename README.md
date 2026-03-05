@@ -60,8 +60,10 @@ Disagreement grounded in operational experience is particularly valuable.
 
 ## About
 
-Written by **Mattias Pilroth**, working with enterprise OT security architecture across European chemical and process industry environments.
+Written by **Mattias Pilroth**, Principal OT Security Architect working with industrial cyber resilience in European chemical and process industry environments.
+
+My background spans field automation engineering, EPCM project delivery in oil and gas and petrochemicals, six years of end-to-end operational responsibility for OT systems at a SEVESO-classified PVC production facility, and enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries. I arrived at security architecture through operations, which shapes how these analyses approach resilience, trust boundaries, and long-lifecycle industrial systems.
 
 Independent analytical work. Does not represent the positions of any employer or client. All examples are abstracted from general operational patterns. No proprietary, confidential, or organizationally identifying information is included.
 
-[LinkedIn](https://www.linkedin.com/in/mattiaspilroth)
+[mattiaspilroth.com](https://mattiaspilroth.com) · [LinkedIn](https://www.linkedin.com/in/mattiaspilroth)
