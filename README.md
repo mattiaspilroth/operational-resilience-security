@@ -2,6 +2,8 @@
 
 Practitioner analysis of long-lifecycle security in high-consequence industrial environments.
 
+Published work is available at [mattiaspilroth.com](https://mattiaspilroth.com). This repository maintains the paper archive.
+
 Drawn from architecture work across production sites where long lifecycles, limited change capacity, regulatory obligations, and operational accountability shape what can realistically be sustained.
 
 The central question:
@@ -14,29 +16,27 @@ These papers examine structural constraints, recurring failure patterns, and the
 
 Each paper addresses a distinct pattern and can be read independently. Together they describe how security posture evolves under sustained operational pressure.
 
-### Structural Constraints
+### Operational Reality
 
-**[Why OT Infrastructure Appears Static](./papers/01_structural_constraints/why_ot_infrastructure_appears_static.md)**  
+**[Why OT Infrastructure Appears Static](https://mattiaspilroth.com/analysis/why-ot-infrastructure-appears-static/)**  
 Stability in continuous process industries is often an engineered response to asymmetric risk rather than technical stagnation. Examines validated configurations, lifecycle economics, vendor authority boundaries, and why ignoring these constraints leads to security strategies that cannot be sustained.
 
-**[Silent Degradation Under IT/OT Convergence](./papers/01_structural_constraints/silent_degradation_under_it_ot_convergence.md)**  
+**[Silent Degradation Under IT/OT Convergence](https://mattiaspilroth.com/analysis/silent-degradation-under-it-ot-convergence/)**  
 Redundant IT infrastructure inside segmented OT zones can degrade invisibly when health signals do not reach actors with authority to intervene. The gap is often not the absence of signals, but the absence of a clearly defined owner for acting on them.
 
-### Identity and Trust
+**[Compliance and Consequence: Competing Priorities in OT Security](https://mattiaspilroth.com/analysis/compliance-and-consequence/)**  
+Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires.
 
-**[OT Identity Architecture: Federation, PAM, and Residual Risk](./papers/02_identity_and_trust/ot_identity_architecture_federation_pam_residual_risk.md)**  
+### Identity and Trust in OT
+
+**[OT Identity Architecture: Federation, PAM, and Residual Risk](https://mattiaspilroth.com/architecture/ot-identity-architecture/)**  
 A structural analysis of common identity models in OT. Explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.
 
-**Part 1: [Trust Decay in Constrained OT Environments](./papers/02_identity_and_trust/trust_decay_in_constrained_ot_environments.md)**  
+**Part 1: [Trust Decay in Constrained OT Environments](https://mattiaspilroth.com/architecture/trust-decay-in-constrained-ot-environments/)**  
 Certificate validation assumes trust material is continuously obtainable. In segmented OT architectures, that assumption may not hold. Trust erosion can remain latent until operational stress reveals it.
 
-**Part 2: [Trust Flow in Constrained OT Environments](./papers/02_identity_and_trust/trust_flow_in_constrained_ot_environments.md)**  
+**Part 2: [Trust Flow in Constrained OT Environments](https://mattiaspilroth.com/architecture/trust-flow-in-constrained-ot-environments/)**  
 Defines the properties required for validation to occur predictably and repeatedly inside constrained zones. Written as architectural requirements to prevent the failure modes identified in Part 1.
-
-### Strategy and Governance
-
-**[Compliance and Consequence: Competing Priorities in OT Security](./papers/03_compliance_and_consequence/compliance_and_consequence_competing_priorities.md)**  
-Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires.
 
 ## Perspective
 
@@ -56,7 +56,6 @@ The goal is practical clarity, not comprehensive coverage.
 Practitioners who have observed similar or contradictory patterns are welcome to engage.
 
 Disagreement grounded in operational experience is particularly valuable.
-
 
 ## About
 
