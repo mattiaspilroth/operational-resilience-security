@@ -32,7 +32,7 @@ In IT, organizations buy platforms intended to be modified.
 
 In OT process control, organizations buy validated functions.
 
-Operating systems, firmware, drivers, control applications, and hardware together form a certified configuration. That configuration defines functional safety assumptions, warranty terms, liability boundaries, and regulatory claims. The operator does not fully own the platform in the IT sense. They operate a certified appliance.
+Operating systems, firmware, drivers, control applications, and hardware together form a validated configuration. That configuration defines functional safety assumptions, warranty terms, liability boundaries, and regulatory claims. The operator does not fully own the platform in the IT sense. They operate a validated appliance.
 
 Modifying the underlying stack without vendor validation can:
 
@@ -79,7 +79,7 @@ PLCs, servers, and HMIs were treated as machine components rather than software 
 
 Once commissioned within a validated envelope, stability became the default expectation. Change was evaluated primarily by process impact, not by technical currency.
 
-Modern cybersecurity depends on visibility into layers that historically drew attention only when they broke.
+Modern cybersecurity depends on visibility into layers that historically drew attention only when they broke. Security architecture now requires exactly the visibility operational culture never built.
 
 ## 4. Stability as a safety and economic strategy
 
@@ -128,7 +128,9 @@ Major OT systems are usually delivered through capital projects. After commissio
 
 These teams are rarely funded or staffed to function like product engineering organizations driving continuous evolution.
 
-Performance indicators emphasize availability, yield, and process stability. A system that runs safely and within specification is considered successful regardless of patch state. Security improvement work arrives as an external requirement. When production targets are met, no internal signal indicates anything is wrong.
+Performance indicators emphasize availability, yield, and stability. A system that runs safely within specification is considered successful regardless of patch state. Security improvement work therefore arrives as an external requirement rather than an operational signal.
+
+The funding structure compounds this. Capital projects carry budget for engineering, validation, and commissioning. Once a system transfers to operations, security improvement work competes for operating budget against maintenance, staffing, and production support. Operating budgets at most sites carry no line item for continuous security integration. The backlog does not accumulate because organizations choose inaction. It accumulates because the funding model has no mechanism for continuous security engineering once the project closes.
 
 ### 5.2 Competence and recovery
 
@@ -148,17 +150,17 @@ From this perspective, familiarity contributes directly to resilience.
 
 Because intervention inside validated assets is difficult, protection has typically been applied around them.
 
-Segmentation, zoning, DMZ patterns, and strict access pathways aim to limit blast radius while preserving internal stability.
+Segmentation, zoning, DMZ patterns, and strict access pathways limit blast radius while preserving internal stability.
 
 This remains necessary.
 
 It is also incomplete. Containment does not prevent misuse of legitimate access, supplier pathways, or failures that originate inside the boundary.
 
-Business requirements are systematically eroding isolation. Real-time production data, remote monitoring, predictive analytics, and cloud connectivity are no longer optional. Digital transformation demands integration.
+Business requirements are systematically eroding isolation. Production optimization, remote diagnostics, predictive analytics, and supply chain integration now require data flows that bypass traditional isolation boundaries.
 
 How integration pressure alters feasible security models is a topic in its own right and is treated separately.
 
-Additional mechanisms are required, but they must fit what operations can sustain.
+Additional mechanisms are required, but they must fit what operations can sustain. As physical isolation weakens, zone-based segmentation becomes less sufficient on its own. Threat paths no longer respect the boundaries those models assume.
 
 ## 7. From patterns to outcomes
 
@@ -168,27 +170,13 @@ The constraints described above have not only shaped operations. They have also 
 
 The Purdue Enterprise Reference Architecture documented how industrial systems were structured: field devices, control layers, site operations, enterprise. It described existing reality. It did not prescribe security boundaries.
 
-When OT security emerged as a discipline, Purdue was adopted as a 
-segmentation template. Over time, description hardened into prescription. 
-The map was mistaken for a wall.
+When OT security emerged as a discipline, Purdue was adopted as a segmentation template. Over time, description hardened into prescription. The map was mistaken for a wall.
 
-This hardening was not accidental. Purdue aligned with the capital 
-project delivery model. Projects need defined scope boundaries, clear 
-handoff points, auditable separation, and standardized specifications. 
-Purdue zones provided all of these. A model that described evolved 
-structure became a template for new construction because it made 
-large-scale delivery manageable.
+This hardening was not accidental. Purdue aligned with the capital project delivery model. Projects need defined scope boundaries, clear handoff points, auditable separation, and standardized specifications. Purdue zones provided all of these. A model that described evolved structure became a template for new construction because it made large-scale delivery manageable.
 
-The problem is not Purdue. The problem is that modern environments no 
-longer fit the delivery model that Purdue supported. Engineering 
-workflows cross zones. Vendors require remote access. Cloud services, 
-identity systems, and shared infrastructure create lateral paths the 
-hierarchy does not represent. Compliance with the model does not 
-necessarily provide coverage against modern threat paths.
+The problem is not Purdue. The problem is treating a descriptive model as a security boundary. Engineering workflows cross zones. Vendors require remote access. Cloud services, identity systems, and shared infrastructure create lateral paths the hierarchy does not represent. The underlying business requirements changed. The engineering procurement templates did not change with them. Compliance with the model does not provide coverage against threat paths it was never designed to represent.
 
-The solution is not to discard Purdue. It is to recognize when 
-description has become prescription and reconnect security measures 
-to actual threat paths rather than template conformity.
+The solution is not to discard Purdue. It is to recognize when description has become prescription and reconnect security measures to actual threat paths rather than template conformity.
 
 ### 7.2 Pattern compliance vs risk reduction
 
@@ -216,41 +204,29 @@ The appliance model limits independent change. Capital delivery separates build 
 
 Slow change is not dysfunction. It is the rational equilibrium produced by these incentives.
 
-Misreading this equilibrium leads to security strategies that are elegant on paper and unimplementable in practice.
+Security architecture that ignores these incentives will be overridden by them.
 
 ## 10. Implications for security design
 
 The constraints described above are not arguments against improvement. They define the boundaries within which security architecture must function.
 
-### Favor durability
+**Favor durability.** Assume solutions must remain effective for decades. Reject controls that depend on frequent tuning or centralized operational support the site cannot sustain.
 
-Assume solutions must remain effective for decades.
+**Expect patch latency.** Design defenses that retain value when updates are slow. Compensating controls must carry the load that patching cannot.
 
-### Expect patch latency
+**Maintain diagnosability.** If operators cannot understand or restore it under pressure, it will not persist. Diagnostic clarity is a resilience property, not a usability preference.
 
-Design defenses that retain value when updates are slow.
+**Extend beyond containment.** Perimeter measures are necessary but insufficient. Introduce detection, identity discipline, and recovery capability in forms that site teams can operate without centralized support. The cost is log infrastructure, credential management processes, and runbook maintenance that most operations teams do not carry as standing responsibilities.
 
-### Maintain diagnosability
+**Align with operational time.** Enduring change follows maintenance and investment rhythms. Security roadmaps that do not map to shutdown cycles and capital planning will not execute.
 
-If operators cannot understand or restore it, it will not persist.
-
-### Extend beyond containment
-
-Perimeter measures are necessary but insufficient. Introduce detection, identity discipline, and recovery capability in forms that can be supported locally.
-
-### Align with operational time
-
-Enduring change follows maintenance and investment rhythms.
-
-### Account for the authority gap
-
-Assume operators may lack the authority to modify validated systems independently. Design controls that function within vendor validation constraints rather than depending on their removal.
+**Account for the authority gap.** Design controls that function within vendor validation constraints rather than depending on their removal. The trade-off is accepting a slower and narrower remediation envelope than enterprise IT frameworks assume.
 
 ## Moving forward
 
 Security evolution is necessary.
 
-Progress depends on approaches that fit environments that are long-lived, consequence-sensitive, and operated by teams whose primary mandate is safe and continuous production.
+Progress depends on approaches that fit long-lived, consequence-sensitive environments operated by teams whose primary mandate is safe and continuous production.
 
 The goal is not to reproduce enterprise patterns. The goal is to achieve comparable or better risk outcomes using methods that can survive the life of the facility.
 
