@@ -157,13 +157,7 @@ Organizations therefore face a practical choice: optimize exclusively for compli
 
 The role of the security architect is not to reject compliance, but to prevent it from exhausting the program’s intellectual and operational bandwidth.
 
-### When the mandate does not yet exist
-
-That role is not always available. Not every practitioner has the authority to implement this orientation immediately. In such environments, the task shifts from redesign to demonstration.
-
-Mandates are rarely created through abstract argument. They emerge from observable mismatches between documented assurance and operational reality: a control marked implemented that fails under testing; a tabletop exercise that reveals unmodeled exposure; a residual risk that exists nowhere in documentation because the current framework has no mechanism to record it.
-
-Making those mismatches visible without dramatization is often the actual work.
+Mandates for consequence-driven security rarely emerge from abstract argument. They follow visible mismatches between documented assurance and operational reality.
 
 ---
 
