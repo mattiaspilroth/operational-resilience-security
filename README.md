@@ -1,6 +1,8 @@
 # Operational Resilience & OT Security
 
-This repository is an archived collection of analytical work on OT security in high-consequence industrial environments. Current and updated work is published at mattiaspilroth.com.
+This repository is an archived collection of analytical work on OT security in high-consequence industrial environments.  
+
+Current and updated work is published at https://mattiaspilroth.com
 
 Drawn from architecture work across production sites where long lifecycles, limited change capacity, regulatory obligations, and operational accountability shape what can realistically be sustained.
 
