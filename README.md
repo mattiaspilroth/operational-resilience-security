@@ -1,8 +1,6 @@
 # Operational Resilience & OT Security
 
-Practitioner analysis of long-lifecycle security in high-consequence industrial environments.
-
-Published work is available at [mattiaspilroth.com](https://mattiaspilroth.com). This repository maintains the paper archive.
+This repository is an archived collection of analytical work on OT security in high-consequence industrial environments. Current and updated work is published at mattiaspilroth.com.
 
 Drawn from architecture work across production sites where long lifecycles, limited change capacity, regulatory obligations, and operational accountability shape what can realistically be sustained.
 
@@ -23,6 +21,9 @@ Stability in continuous process industries is often an engineered response to as
 
 **[Silent Degradation Under IT/OT Convergence](https://mattiaspilroth.com/analysis/silent-degradation-under-it-ot-convergence/)**  
 Redundant IT infrastructure inside segmented OT zones can degrade invisibly when health signals do not reach actors with authority to intervene. The gap is often not the absence of signals, but the absence of a clearly defined owner for acting on them.
+
+**[Compliance and Consequence: Competing Priorities in OT Security](https://mattiaspilroth.com/analysis/compliance-and-consequence/)**  
+Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires.
 
 ### Identity and Trust in OT
 
