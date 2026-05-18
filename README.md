@@ -1,22 +1,14 @@
-# Operational Resilience & OT Security
+# Mattias Pilroth — Analytical Archive
 
-This repository is an archived collection of analytical work on OT security in high-consequence industrial environments.  
+Current work is published at [mattiaspilroth.com](https://mattiaspilroth.com).
 
-Current and updated work is published at https://mattiaspilroth.com
+This repository is an archived collection of analytical papers. The papers examine structural constraints, recurring failure patterns, and the architectural properties required for resilience in high-consequence industrial environments. They represent the analytical foundation that the current framework builds on, not the framework itself.
 
-Drawn from architecture work across production sites where long lifecycles, limited change capacity, regulatory obligations, and operational accountability shape what can realistically be sustained.
+The central question running through this archive: which security controls remain durable under operational reality, and which degrade predictably despite appearing sound on paper?
 
-The central question:
+## Archive contents
 
-**Which security controls remain durable under operational reality, and which degrade predictably despite appearing sound on paper?**
-
-These papers examine structural constraints, recurring failure patterns, and the architectural properties required for resilience when consequences are physical, not only informational.
-
-## The papers
-
-Each paper addresses a distinct pattern and can be read independently. Together they describe how security posture evolves under sustained operational pressure.
-
-### Operational Reality
+### Operational reality
 
 **[Why OT Infrastructure Appears Static](./papers/01_structural_constraints/why_ot_infrastructure_appears_static.md)**  
 Stability in continuous process industries is often an engineered response to asymmetric risk rather than technical stagnation. Examines validated configurations, lifecycle economics, vendor authority boundaries, and why ignoring these constraints leads to security strategies that cannot be sustained.
@@ -27,7 +19,7 @@ Redundant IT infrastructure inside segmented OT zones can degrade invisibly when
 **[Compliance and Consequence: Competing Priorities in OT Security](./papers/03_compliance_and_consequence/compliance_and_consequence_competing_priorities.md)**  
 Examines why compliance-driven programs and resilience-driven programs diverge over time. Analyzes the structural incentives behind that divergence and outlines what operationalizing consequence-oriented security requires.
 
-### Identity and Trust in OT
+### Identity and trust in OT
 
 **[OT Identity Architecture: Federation, PAM, and Residual Risk](./papers/02_identity_and_trust/ot_identity_architecture_federation_pam_residual_risk.md)**  
 A structural analysis of common identity models in OT. Explores how federation, isolation, and hybrid approaches redistribute rather than eliminate risk, and why authority for high-consequence actions must remain clearly defined.
@@ -38,31 +30,16 @@ Certificate validation assumes trust material is continuously obtainable. In seg
 **Part 2: [Trust Flow in Constrained OT Environments](./papers/02_identity_and_trust/trust_flow_in_constrained_ot_environments.md)**  
 Defines the properties required for validation to occur predictably and repeatedly inside constrained zones. Written as architectural requirements to prevent the failure modes identified in Part 1.
 
-## Perspective
+## Current framework
 
-These papers favor:
+The SOR Framework and its companion papers are available at [mattiaspilroth.com](https://mattiaspilroth.com). The framework operationalises the consequence-derived investment model that the papers in this archive point toward but do not deliver.
 
-* Architectural reasoning beyond checklist interpretation
-* Observed operational behavior over design intent
-* Long-term durability over short-term elegance
-* Contextual allocation of controls rather than universal prescriptions
-
-No control category is universally correct. Architectural fit determines durability.
-
-The goal is practical clarity, not comprehensive coverage.
-
-## Discussion
-
-Practitioners who have observed similar or contradictory patterns are welcome to engage.
-
-Disagreement grounded in operational experience is particularly valuable.
+Recommended reading order for new visitors: start at mattiaspilroth.com.
 
 ## About
 
-Written by **Mattias Pilroth**, Principal OT Security Architect working with industrial cyber resilience in European chemical and process industry environments.
+Written by Mattias Pilroth, OT security architect working on consequence-derived investment frameworks for process industry environments. Operator background: six years of end-to-end operational responsibility at a SEVESO-classified chlorovinyl production facility. Current work spans enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries.
 
-My background spans field automation engineering, EPCM project delivery in oil and gas and petrochemicals, six years of end-to-end operational responsibility for OT systems at a SEVESO-classified PVC production facility, and enterprise OT security architecture across 14 chemical manufacturing sites in 8 European countries. I arrived at security architecture through operations, which shapes how these analyses approach resilience, trust boundaries, and long-lifecycle industrial systems.
-
-Independent analytical work. Does not represent the positions of any employer or client. All examples are abstracted from general operational patterns. No proprietary, confidential, or organizationally identifying information is included.
+Independent analytical work. Does not represent the positions of any employer or client. All examples are abstracted from general operational patterns. No proprietary, confidential, or organisationally identifying information is included.
 
 [mattiaspilroth.com](https://mattiaspilroth.com) · [LinkedIn](https://www.linkedin.com/in/mattiaspilroth)
